@@ -5,7 +5,7 @@
     <title>Arc4 Phishing Awareness</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #0A1611;
@@ -17,12 +17,14 @@
             --accent-deep: #2EE89E;
             --warning: #69f7ae;
             --rule: rgba(230,237,232,0.12);
+            --scribble: #123B2C;
+            --mint: #CFFFEA;
         }
         
         body {
             background-color: var(--bg);
             color: var(--ink);
-            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
             padding: 0 24px;
         }
@@ -33,34 +35,15 @@
             padding: 80px 0 64px;
         }
 
-        .eyebrow { 
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 80px;
-        }
-
         .wordmark {
-            font-family: 'Poppins', serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 22px;
             letter-spacing: -0.01em;
         }
         
-        .eyebrow-divider {
-            flex: 1;
-            height: 1px;
-            background-color:var(--rule);
-        }
-        .eyebrow-label {
-            font-size: 11px;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--ink-muted);
-            font-weight: 500;
-        }
         .headline {
-            font-family: 'Poppins', serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 48px;
             font-weight: 500;
             line-height: 1.15;
@@ -75,12 +58,14 @@
         }
 
         .reassurance {
+            font-family: 'Montserrat', sans-serif;
             font-size: 19px;
             color: var(--ink-soft);
             margin-bottom: 64px;
         }
 
         .section-label {
+            font-family: 'Montserrat', sans-serif;
             font-size: 12px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
@@ -93,13 +78,51 @@
             margin-bottom: 64px;
         }
 
+        .screenshot-mock {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 24px 60px -24px rgba(0,0,0,0.65);
+            line-height: 0;
+        }
+
+        .screenshot-mock img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
         .flag-number {
-            font-family: 'Poppins', serif;
-            font-size: 36px;
-            font-weight: 400;
-            font-style: italic;
-            color: var(--warning);
-            line-height: 1;
+            position: relative;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flag-number svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .flag-number svg path {
+            fill: var(--scribble);
+        }
+
+        .flag-number span {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            color: var(--mint);
+            letter-spacing: -0.01em;
         }
 
         .next-time {
@@ -107,6 +130,7 @@
         }
 
         .next-time p {
+            font-family: 'Montserrat', sans-serif;
             font-size: 16.5px;
             line-height: 1.65;
             color: var(--ink-soft);
@@ -119,6 +143,7 @@
         }
 
         .next-time li {
+            font-family: 'Montserrat', sans-serif;
             font-size: 16.5px;
             line-height: 1.65;
             color: var(--ink-soft);
@@ -153,7 +178,7 @@
         }
 
         .flag-title {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 17px;
             font-weight: 600;
             color: var(--ink);
@@ -161,13 +186,14 @@
         }
 
         .flag-body {
+            font-family: 'Montserrat', sans-serif;
             font-size: 15.5px;
             line-height: 1.55;
             color: var(--ink-soft);
         }
 
         code {
-            font-family: ui-monospace, 'SF Mono', 'Menlo', Consolas, monospace;
+            font-family: 'Montserrat', sans-serif;
             font-size: 0.88em;
             background-color: rgba(46, 232, 158, 0.12);
             padding: 1px 6px;
@@ -190,6 +216,7 @@
         }
 
         .divider-mark {
+            font-family: 'Montserrat', sans-serif;
             color: var(--ink-muted);
             font-size: 13px;
         }
@@ -215,6 +242,7 @@
         }
 
         .detector-label {
+            font-family: 'Montserrat', sans-serif;
             font-size: 11px;
             letter-spacing: 0.2em;
             text-transform: uppercase;
@@ -224,7 +252,7 @@
         }
 
          .detector-heading {
-            font-family: 'Poppins', serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 26px;
             font-weight: 500;
             line-height: 1.25;
@@ -233,10 +261,15 @@
             margin-bottom: 14px;
         }
 
+        .detector-body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .detector-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            font-family: 'Montserrat', sans-serif;
             font-size: 15px;
             font-weight: 600;
             color: var(--bg);
@@ -261,8 +294,13 @@
             transform: translateX(3px);
         }
 
+        .detector-note {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .footer {
             text-align: center;
+            font-family: 'Montserrat', sans-serif;
             font-size: 13px;
             line-height: 1.6;
             color: var(--ink-muted);
@@ -272,6 +310,7 @@
         }
 
         .footer strong{
+            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 500;
             color: var(--ink-soft);
@@ -284,10 +323,6 @@
 
             .container {
                 padding: 56px 0 48px;
-            }
-
-            .eyebrow {
-                margin-bottom: 56px;
             }
 
             .headline {
@@ -326,21 +361,21 @@
 <body>
     <div class="container">
 
-    <div class="eyebrow">
-        <span class="wordmark">Arc4</span>
-        <span class="eyebrow-divider"></span>
-        <span class="eyebrow-label">Phishing Awareness</span>
-    </div>
     <div>
         <h1 class="headline">Heads up, this was a <em>phishing awareness test.</em></h1>
         <p class="reassurance">Good news is, nothing was compromised, <strong>no data was collected about you personally,</strong> and you're not in any trouble. This was a controlled simulation to help our team get better at spotting phishing emails!</p>
     </div>
 
     <div class="section-label"> The email you just clicked had these red flags: </div>
+
+    <div class="screenshot-mock">
+        <img src="exhibit-email-screenshot.png" alt="Screenshot of the phishing email as it appeared in Gmail, with green markers over the sender name, greeting, subject line, and Reset Password button">
+    </div>
+
     <div class="flags">
 
         <div class="flag">
-            <div class="flag-number">1</div>
+            <div class="flag-number"><svg viewBox="0 0 100 100" style="transform: rotate(-7deg);"><path d="M50,8 L67.6,25.7 L93.7,35.8 L76.6,58.7 L75.9,85.6 L50,82 L21.8,88.8 L21.5,59.3 L12,37.6 L30,22.5 Z"/></svg><span>1!</span></div>
             <div class="flag-content">
                 <div class="flag-title">The sender address was a Gmail address</div>
                 <div class="flag-body">It came from <code>arc4.security.notice@gmail.com</code>, not <code>@arc4.com</code>. Real internal IT communications come from internal addresses. The display name "Arc4 IT Security" was designed to look legitimate and make you trust it!</div>
@@ -348,7 +383,7 @@
         </div>
 
         <div class="flag">
-            <div class="flag-number">2</div>
+            <div class="flag-number"><svg viewBox="0 0 100 100" style="transform: rotate(5deg);"><path d="M50,8 L67.6,25.7 L93.7,35.8 L76.6,58.7 L75.9,85.6 L50,82 L21.8,88.8 L21.5,59.3 L12,37.6 L30,22.5 Z"/></svg><span>2!</span></div>
             <div class="flag-content">
                 <div class="flag-title">Generic greeting</div>
                 <div class="flag-body">"Hi," instead of your name. Internal IT will usually address you specifically, especially for something personal like a password reset!</div>
@@ -356,7 +391,7 @@
         </div>
 
         <div class="flag">
-            <div class="flag-number">3</div>
+            <div class="flag-number"><svg viewBox="0 0 100 100" style="transform: rotate(-4deg);"><path d="M50,8 L67.6,25.7 L93.7,35.8 L76.6,58.7 L75.9,85.6 L50,82 L21.8,88.8 L21.5,59.3 L12,37.6 L30,22.5 Z"/></svg><span>3!</span></div>
             <div class="flag-content">
                 <div class="flag-title">Urgency pressure</div>
                 <div class="flag-body">"Password expires in 24 hours" is designed to make you act before you think. Real password resets give a reasonable notice!</div>
@@ -364,7 +399,7 @@
         </div>
 
         <div class="flag">
-            <div class="flag-number">4</div>
+            <div class="flag-number"><svg viewBox="0 0 100 100" style="transform: rotate(6deg);"><path d="M50,8 L67.6,25.7 L93.7,35.8 L76.6,58.7 L75.9,85.6 L50,82 L21.8,88.8 L21.5,59.3 L12,37.6 L30,22.5 Z"/></svg><span>4!</span></div>
             <div class="flag-content">
                 <div class="flag-title">The link destination</div>
                 <div class="flag-body">If you hovered over the button before clicking, you would notice the link didn't go anywhere connected to Arc4. Always hover before clicking, especially on anything asking for you to log in!</div>
@@ -384,14 +419,8 @@
         </ul>
     </div>
 
-    <div class="divider">
-        <span class="divider-line"></span>
-        <span class="divider-mark">✦</span>
-        <span class="divider-line"></span>
-    </div>
-
     <div class="detector-card">
-        <div class="detector-label">A little something extra...</div>
+        <div class="detector-label">A little something extra from me...</div>
         <h2 class="detector-heading">Want to check suspicious email content yourself?</h2>
         <p class="detector-body">I built a small tool you can paste emails into for a quick read! It flags common phishing patterns like urgency language, suspicious URLs, and credential-bait wording!</p>
         <a class="detector-link" href="https://arc4-phishing-checker.streamlit.app/">Try the Arc4 Phishing Checker 
@@ -401,15 +430,9 @@
 
     </div>
 
-    <div class="divider">
-        <span class="divider-line"></span>
-        <span class="divider-mark">✦</span>
-        <span class="divider-line"></span>
-    </div>
-
     <div class="footer">
         <p style="font-style: italic; margin-bottom: 20px;">Phishing is one of the most common attack vectors against digital agencies because we handle client credentials, financial info, and brand-sensitive content. Thanks for being part of making Arc4 more secure.</p><br>
-        <strong>Phishing awareness simulation</strong> -- June 2026<br>
+        <strong>Phishing awareness simulation</strong> - June 2026<br>
         Coordinated by Ryan, with Greg &amp; Holden!
     </div>
     </div>
